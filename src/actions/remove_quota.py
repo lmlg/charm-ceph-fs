@@ -14,7 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 import os
-from charmhelpers.core.hookenv import action_get, action_fail, action_set
+
+from charmhelpers.core.hookenv import action_get, action_fail
 import xattr
 
 __author__ = 'Chris Holcombe <chris.holcombe@canonical.com>'
