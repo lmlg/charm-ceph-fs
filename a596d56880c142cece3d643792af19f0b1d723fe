@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba5201f7_1702a16f",
+        "filename": "src/tests/10-deploy",
+        "patchSetId": 15
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 20635
+      },
+      "writtenOn": "2017-01-03T23:18:29Z",
+      "side": 1,
+      "message": "This file should not exist.  Instead, gate-* files should be added.  See AODH tests/gate-*.",
+      "revId": "a596d56880c142cece3d643792af19f0b1d723fe",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
