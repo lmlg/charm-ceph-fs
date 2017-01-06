@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba5201f7_eea24aad",
+        "filename": "src/tests/gate-basic-xenial-newton",
+        "patchSetId": 23
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 20635
+      },
+      "writtenOn": "2017-01-06T00:52:05Z",
+      "side": 1,
+      "message": "Newton isn\u0027t a series.  Ubuntu Server releases are series.",
+      "revId": "cd411e3fe645d13a4fd284bdc676578ea55dd01d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
