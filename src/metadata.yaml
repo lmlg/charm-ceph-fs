@@ -16,3 +16,6 @@ subordinate: false
 requires:
   ceph-mds:
     interface: ceph-mds
+extra-bindings:
+  public:
+  cluster:
