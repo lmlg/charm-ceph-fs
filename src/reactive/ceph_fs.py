@@ -84,6 +84,7 @@ def config_changed(ceph_client):
         'loglevel': config('loglevel'),
         'hostname': socket.gethostname(),
         'mds_name': socket.gethostname(),
+        'public_network': ' '.join(get_networks()),
     }
 
     try:
