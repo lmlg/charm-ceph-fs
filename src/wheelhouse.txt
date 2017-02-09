@@ -1,1 +1,5 @@
+netifaces
+dnspython3
 ceph_api
+git+https://github.com/chrismacnaughton/charms.storage.git#egg=charms.storage
+git+https://github.com/ChrisMacNaughton/charms.hardening.git#egg=charms.hardening
