@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa31d9ce_9eab3889",
+        "filename": "src/layer.yaml",
+        "patchSetId": 9
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 20812
+      },
+      "writtenOn": "2017-02-10T22:36:43Z",
+      "side": 1,
+      "message": "Is this order important?",
+      "revId": "e8fe02cc87b423272a3722c52ba64dd08acab9d2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
