@@ -16,6 +16,24 @@
       "revId": "e8fe02cc87b423272a3722c52ba64dd08acab9d2",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa31d9ce_6ebb0be6",
+        "filename": "src/layer.yaml",
+        "patchSetId": 9
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 935
+      },
+      "writtenOn": "2017-02-13T09:38:54Z",
+      "side": 1,
+      "message": "No - I tried to strip out ceph-base (as its way to overloaded with stuff atm), but re-added it as the charm is broken without it.\n\nManaged todo this not quite in the same order - I\u0027ll fix that up",
+      "parentUuid": "fa31d9ce_9eab3889",
+      "revId": "e8fe02cc87b423272a3722c52ba64dd08acab9d2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
