@@ -16,6 +16,7 @@ import os
 import socket
 import subprocess
 
+from charms import reactive
 from charms.reactive import when, when_not, set_state
 from charmhelpers.core.hookenv import (
     application_version_set, config, log, ERROR, cached, DEBUG, unit_get,
@@ -31,7 +32,7 @@ from charmhelpers.fetch import (
     apt_install, filter_installed_packages)
 import jinja2
 
-from charms.apt import queue_install
+from charms.apt import queue_install, add_source
 
 try:
     import dns.resolver
@@ -49,6 +50,10 @@ def render_template(template_name, context, template_dir=TEMPLATES_DIR):
     template = templates.get_template(template_name)
     return template.render(context)
 
+@when_not('apt.installed.ceph')
+def install_ceph_base():
+    add_source(config('source'), key=config('key'))
+    queue_install(charms.ceph_base.PACKAGES)
 
 @when_not('apt.installed.ceph-mds')
 def install_cephfs():
@@ -189,3 +194,44 @@ def get_network_addrs(config_opt):
             return [get_host_ip()]
 
     return addrs
+
+def assess_status():
+    """Assess status of current unit"""
+    statuses = set([])
+    messages = set([])
+    if is_state('cephfs.started'):
+        (status, message) = log_mds()
+        statuses.add(status)
+        messages.add(message)
+    if 'blocked' in statuses:
+        status = 'blocked'
+    elif 'waiting' in statuses:
+        status = 'waiting'
+    else:
+        status = 'active'
+    message = '; '.join(messages)
+    status_set(status, message)
+
+
+def log_mds():
+    if len(relation_ids('mon')) < 1:
+        return 'blocked', 'Missing relation: monitor'
+    running_mds = get_running_mds()
+    if not running_mds:
+        return 'blocked', 'No MDS detected using current configuration'
+    else:
+        return 'active', 'Unit is ready ({} MDS)'.format(len(running_mds))
+
+# Per https://github.com/juju-solutions/charms.reactive/issues/33,
+# this module may be imported multiple times so ensure the
+# initialization hook is only registered once. I have to piggy back
+# onto the namespace of a module imported before reactive discovery
+# to do this.
+if not hasattr(reactive, '_ceph_log_registered'):
+    # We need to register this to run every hook, not just during install
+    # and config-changed, to protect against race conditions. If we don't
+    # do this, then the config in the hook environment may show updates
+    # to running hooks well before the config-changed hook has been invoked
+    # and the intialization provided an opertunity to be run.
+    hookenv.atexit(assess_status)
+    reactive._ceph_log_registered = True
