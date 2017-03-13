@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a30ddce_d936e801",
+        "filename": "src/tests/gate-basic-xenial-ocata",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 935
+      },
+      "writtenOn": "2017-03-13T16:02:30Z",
+      "side": 1,
+      "message": "Needs an indent here",
+      "revId": "73b4021d89d7be0dfaa59faa7bb2206337fba2ef",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a30ddce_3928e499",
+        "filename": "src/tests/gate-basic-zesty-ocata",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 935
+      },
+      "writtenOn": "2017-03-13T16:02:30Z",
+      "side": 1,
+      "message": "Needs and indent here",
+      "revId": "73b4021d89d7be0dfaa59faa7bb2206337fba2ef",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
