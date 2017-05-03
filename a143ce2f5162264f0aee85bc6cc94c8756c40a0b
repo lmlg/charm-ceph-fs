@@ -1,0 +1,10 @@
+Verified+1: Canonical CI <uosci-testing-bot@ubuntu.com>
+Workflow+1: David Ames <david.ames@canonical.com>
+Code-Review+2: Corey Bryant <corey.bryant@canonical.com>
+Workflow+1: Corey Bryant <corey.bryant@canonical.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Wed, 03 May 2017 21:39:56 +0000
+Reviewed-on: https://review.openstack.org/442696
+Project: openstack/charm-ceph-fs
+Branch: refs/heads/master
