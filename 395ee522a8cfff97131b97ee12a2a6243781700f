@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f4e5783_d4b797f4",
+        "filename": "src/tests/gate-basic-artful-pike",
+        "patchSetId": 6
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 26040
+      },
+      "writtenOn": "2017-10-17T16:48:49Z",
+      "side": 1,
+      "message": "bad indentation is bad. I\u0027m guessing that you noticed this, and this is why you -1\u0027ed the review.",
+      "revId": "395ee522a8cfff97131b97ee12a2a6243781700f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
