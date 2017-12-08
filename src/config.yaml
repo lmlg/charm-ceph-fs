@@ -47,3 +47,43 @@ options:
       order for this charm to function correctly, the privacy extension must be
       disabled and a non-temporary address must be configured/available on
       your network interface.
+  fs-name:
+    type: string
+    default: 
+    description: The name to use when creating the pool for the filesystem
+  pool-type:
+    type: string
+    default: replicated
+    description: Type of pool to use, replicated or erasure
+  pool-weight:
+    type: int
+    default: 10
+    description: |
+      The percentage (0-100) of the cluster data on this pool is 
+      expected to consume. This is used to scale the number of pgs in the pool. 
+      For example, a single pool as the only use of a ceph cluster would be set to 100. 
+      If two filesystems share a Ceph cluster with equal expected data, set to 50.
+  config-flags:
+    type: string
+    default: '{"profile":"default"}'
+    description: |
+      A string representation of a python dictionary containing pool configuration keys.
+      For an erasure pool the supported keys are:
+        - profile: name of the erasure profile to use or create
+        - erasure-type: Erasure algorithium
+        - failure-domain: The failure domain to use for this pool
+        - k: k value
+        - m: m value
+        - l: l value if supported by algorithium 
+  compression-mode:
+    type: string
+    default:
+    description: Compression mode to use for the pool
+  compression-algorithm:
+    type: string
+    default: 'snappy'
+    description: Compression algorithm
+  compression-required-ratio:
+    type: float
+    default: .50
+    description: The required ration for compression to be used
