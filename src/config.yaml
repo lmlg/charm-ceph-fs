@@ -47,3 +47,69 @@ options:
       order for this charm to function correctly, the privacy extension must be
       disabled and a non-temporary address must be configured/available on
       your network interface.
+  fs-name:
+    type: string
+    default: 
+    description: The name to use when creating the pool for the filesystem
+  pool-type:
+    type: string
+    default: replicated
+    description: Type of pool to use, replicated or erasure
+  pool-weight:
+    type: int
+    default: 10
+    description: |
+      The percentage (0-100) of the cluster data on this pool is 
+      expected to consume. This is used to scale the number of pgs in the pool. 
+      For example, a single pool as the only use of a ceph cluster would be set to 100. 
+      If two filesystems share a Ceph cluster with equal expected data, set to 50.
+  erasure-profile:
+    type: string
+    default: "default"
+    description: |
+      The name of the erasure profile to use, this only applies if the pool-type
+      is set to erasure. Settingn this to a custom value enables setting several
+      of the erasure configuration parameters.
+  erasure-plugin:
+    type: string
+    default: "jerasure"
+    description: |
+      The erasure plugin to use. This only applies if the pool-type is set to 
+      erasure and the erasure-profile is not 'default'
+  erasure-failure-domain:
+    type: string
+    default: "osd"
+    description: |
+      The erasure failure domain. This only applies if the pool-type is set to
+      erasure and the erasure-profile is not 'default'
+  erasure-k:
+    type: int
+    default: 3
+    description: |
+      The number of erasure data chunks. This only applies if the pool-type is 
+      set to erasure and the erasure-profile is not 'default'
+  erasure-m:
+    type: int
+    default: 2
+    description: |
+      The number of encoding chunks. This only applies if the pool-type is set 
+      to erasure and the erasure-profile is not 'default'
+  erasure-l:
+    type: int
+    default: 3
+    description: |
+      The locality setting for erasure encoding. This only applies if the pool-type
+      is set to erasure, the erasure-profile is not 'default', and the erasure-plugin
+      supports a locality setting.
+  compression-mode:
+    type: string
+    default:
+    description: Compression mode to use for the pool
+  compression-algorithm:
+    type: string
+    default: 'snappy'
+    description: Compression algorithm
+  compression-required-ratio:
+    type: float
+    default: .50
+    description: The required ration for compression to be used
