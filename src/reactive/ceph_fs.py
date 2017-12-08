@@ -22,12 +22,12 @@ from charmhelpers.core import hookenv
 from charmhelpers.core.hookenv import (
     application_version_set, config, log, ERROR, cached, DEBUG, unit_get,
     network_get_primary_address, relation_ids,
-    status_set)
+    status_set, service_name)
 from charmhelpers.core.host import service_restart
 from charmhelpers.contrib.network.ip import (
     get_address_in_network,
     get_ipv6_addr)
-
+from charmhelpers.contrib.storage.linux.ceph import CephConfContext
 from charmhelpers.fetch import (
     get_upstream_version,
     apt_install, filter_installed_packages)
@@ -65,10 +65,35 @@ def install_cephfs():
     queue_install(['ceph-mds'])
 
 
+@when_not('ceph-mds.custom.init')
+def block_default_init():
+    log('Setting custom init', level=DEBUG)
+    set_state('ceph-mds.custom.init')
+
+
+@when('ceph-mds.available')
+@when_not('ceph-mds.initialized')
+def initialize_mds(ceph_client):
+    log('Calling custom init', level=DEBUG)
+    sections = ['profile', 'erasure-type', 'failure-domain', 'k', 'm', 'l']
+    config_flags = CephConfContext(permitted_sections=sections)()
+    config_flags['compression-mode'] = config('compression-mode')
+    config_flags['compression-algorithm'] = config('compression-algorithm')
+    config_flags['compression-required-ratio'] = config('compression-required-ratio')
+    name = config('fs-name') or service_name()
+    if name is None:
+        name = service_name()
+    ceph_client.initialize_mds(name=name,
+                               pool_type=config('pool-type'),
+                               weight=config('pool-weight'),
+                               config_flags=config_flags)
+
+
 @when('cephfs.configured')
 @when('ceph-mds.pools.available')
 @when_not('cephfs.started')
 def setup_mds(relation):
+    log(message='Starting ceph-mds', level=DEBUG)
     try:
         service_restart('ceph-mds')
         set_state('cephfs.started')
@@ -78,6 +103,7 @@ def setup_mds(relation):
 
 
 @when('ceph-mds.available')
+@when_not('cephfs.configured')
 def config_changed(ceph_client):
     charm_ceph_conf = os.path.join(os.sep,
                                    'etc',
@@ -237,6 +263,7 @@ def log_mds():
         return 'blocked', 'No MDS detected using current configuration'
     else:
         return 'active', 'Unit is ready ({} MDS)'.format(len(running_mds))
+
 
 # Per https://github.com/juju-solutions/charms.reactive/issues/33,
 # this module may be imported multiple times so ensure the
