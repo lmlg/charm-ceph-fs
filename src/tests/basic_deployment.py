@@ -89,7 +89,6 @@ class CephFsBasicDeployment(OpenStackAmuletDeployment):
         }
         # NOTE(jamespage): fix fsid to allow later validation
         ceph_mon_config = {
-            'fsid': '6547bd3e-1397-11e2-82e5-53567c8d32dc',
             'source': self.source,
         }
         # Include a non-existent device as osd-devices is a whitelist,
