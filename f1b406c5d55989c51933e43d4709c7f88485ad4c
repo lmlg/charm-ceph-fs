@@ -1,0 +1,8 @@
+Code-Review+2: Ryan Beisner <ryan.beisner@canonical.com>
+Workflow+1: Ryan Beisner <ryan.beisner@canonical.com>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Wed, 05 Sep 2018 21:54:11 +0000
+Reviewed-on: https://review.openstack.org/600212
+Project: openstack/charm-ceph-fs
+Branch: refs/heads/stable/18.08
