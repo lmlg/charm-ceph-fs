@@ -2,6 +2,5 @@
 # one-off, please don't.  Intead, consult #openstack-charms and ask about
 # requirements management in charms via bot-control.  Thank you.
 #
-# Build requirements
-charm-tools>=2.4.4
-simplejson
+# Intentionally blank for built source charms, to be removed in the future
+# as it is unnecessary in built charms.
