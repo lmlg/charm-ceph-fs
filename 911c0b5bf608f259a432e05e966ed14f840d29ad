@@ -1,0 +1,9 @@
+Verified+1: Canonical CI <uosci-testing-bot@ubuntu.com>
+Code-Review+2: Frode Nordahl <frode.nordahl@canonical.com>
+Workflow+1: Frode Nordahl <frode.nordahl@canonical.com>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Fri, 05 Oct 2018 12:37:15 +0000
+Reviewed-on: https://review.openstack.org/604047
+Project: openstack/charm-ceph-fs
+Branch: refs/heads/master
