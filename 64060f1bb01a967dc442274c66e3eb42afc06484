@@ -1,0 +1,9 @@
+Verified+1: Canonical CI <uosci-testing-bot@ubuntu.com>
+Code-Review+2: David Ames <david.ames@canonical.com>
+Workflow+1: David Ames <david.ames@canonical.com>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Wed, 19 Dec 2018 23:18:42 +0000
+Reviewed-on: https://review.openstack.org/626196
+Project: openstack/charm-ceph-fs
+Branch: refs/heads/master
