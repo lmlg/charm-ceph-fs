@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7faddb67_21b95ce8",
+        "filename": ".zuul.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 8556
+      },
+      "writtenOn": "2019-07-27T13:17:51Z",
+      "side": 1,
+      "message": "we do not need py35 here ?",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 36
+      },
+      "revId": "2de3ab8f58193a1e0665302058763d9e00dc28f6",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
