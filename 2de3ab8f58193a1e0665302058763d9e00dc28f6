@@ -22,6 +22,30 @@
       "revId": "2de3ab8f58193a1e0665302058763d9e00dc28f6",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7faddb67_30198879",
+        "filename": ".zuul.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 11805
+      },
+      "writtenOn": "2019-07-30T14:31:44Z",
+      "side": 1,
+      "message": "Well that\u0027s a good point, it does say it supports xenial (see src/metadata.yaml). I\u0027ll add it.",
+      "parentUuid": "7faddb67_21b95ce8",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 36
+      },
+      "revId": "2de3ab8f58193a1e0665302058763d9e00dc28f6",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
