@@ -16,6 +16,24 @@
       "revId": "e1139c304c3f1c53752447d4c64bf8009fccbf05",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7faddb67_50e2ebd6",
+        "filename": "src/wheelhouse.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2019-08-16T04:54:52Z",
+      "side": 1,
+      "message": "Thank you for catching that, done.",
+      "parentUuid": "7faddb67_7827dbc8",
+      "revId": "e1139c304c3f1c53752447d4c64bf8009fccbf05",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
