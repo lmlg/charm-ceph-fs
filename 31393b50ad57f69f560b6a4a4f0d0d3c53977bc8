@@ -1,0 +1,9 @@
+Verified+1: Canonical CI <uosci-testing-bot@ubuntu.com>
+Code-Review+2: Ryan Beisner <ryan.beisner@canonical.com>
+Workflow+1: Ryan Beisner <ryan.beisner@canonical.com>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Tue, 03 Sep 2019 21:02:52 +0000
+Reviewed-on: https://review.opendev.org/678645
+Project: openstack/charm-ceph-fs
+Branch: refs/heads/master
