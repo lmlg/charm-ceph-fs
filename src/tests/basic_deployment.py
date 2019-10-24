@@ -128,6 +128,9 @@ class CephFsBasicDeployment(OpenStackAmuletDeployment):
         ceph_osd_processes = {
             'ceph-osd': 2
         }
+        if self._get_openstack_release() >= self.bionic_train:
+            ceph_osd_processes['ceph-osd'] = 1
+
         ceph_mds_processes = {
             'ceph-mds': 1
         }
