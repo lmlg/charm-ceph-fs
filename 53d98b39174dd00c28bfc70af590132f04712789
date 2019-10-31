@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3fa7e38b_77c00f51",
+        "filename": "src/tests/basic_deployment.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 7730
+      },
+      "writtenOn": "2019-10-31T12:31:48Z",
+      "side": 1,
+      "message": "I found the issue here but that may not be the right fix...",
+      "revId": "53d98b39174dd00c28bfc70af590132f04712789",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
