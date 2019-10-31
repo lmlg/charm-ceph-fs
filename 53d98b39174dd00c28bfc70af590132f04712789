@@ -52,6 +52,24 @@
       "revId": "53d98b39174dd00c28bfc70af590132f04712789",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3fa7e38b_48ea140f",
+        "filename": "src/tests/basic_deployment.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 11805
+      },
+      "writtenOn": "2019-10-31T15:08:25Z",
+      "side": 1,
+      "message": "Thanks Chris. We should probably add a comment in the code about that for people like me :) Chris, while you\u0027re here can you shed any light on why we\u0027re setting osd-devices\u003d\u0027/srv/ceph /dev/test-non-existent\u0027 (re: Ryan\u0027s comment)? I think we are ok since we\u0027re using storage via \u0027osd-devices: cinder,10G\u0027 but not sure what the point of setting the osd-devices paths is.",
+      "parentUuid": "3fa7e38b_524de197",
+      "revId": "53d98b39174dd00c28bfc70af590132f04712789",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
