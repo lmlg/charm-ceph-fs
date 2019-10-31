@@ -34,6 +34,24 @@
       "revId": "53d98b39174dd00c28bfc70af590132f04712789",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3fa7e38b_524de197",
+        "filename": "src/tests/basic_deployment.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 20634
+      },
+      "writtenOn": "2019-10-31T13:59:31Z",
+      "side": 1,
+      "message": "This matches the changes that were done in the ceph etsting in Zaza (https://github.com/openstack-charmers/zaza-openstack-tests/pull/52/files#diff-bdaa6232d87a95e00de95cd4545e87f3). It is required because, pre-nautilus, we have a directory backed OSD and a disk backed OSD, but at nautilus (and beyond) we only have the disk backed OSD",
+      "parentUuid": "3fa7e38b_92735916",
+      "revId": "53d98b39174dd00c28bfc70af590132f04712789",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
