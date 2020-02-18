@@ -1,42 +1,54 @@
-series: disco
+series: eoan
 applications:
   ceph-fs:
     charm: ceph-fs
-    series: disco
+    series: eoan
     num_units: 1
+    options:
+      source: cloud:eoan-train/proposed
   ceph-osd:
     charm: cs:~openstack-charmers-next/ceph-osd
     num_units: 3
     storage:
       osd-devices: 'cinder,10G'
     options:
-      osd-devices: '/srv/ceph /dev/test-non-existent'
+      osd-devices: '/dev/test-non-existent'
+      source: cloud:eoan-train/proposed
   ceph-mon:
     charm: cs:~openstack-charmers-next/ceph-mon
     num_units: 3
     options:
       monitor-count: '3'
-      auth-supported: 'none'
+      source: cloud:eoan-train/proposed
   percona-cluster:
     charm: cs:~openstack-charmers-next/percona-cluster
     num_units: 1
     options:
       dataset-size: 25%
       max-connections: 1000
+      source: cloud:eoan-train/proposed
   rabbitmq-server:
     charm: cs:~openstack-charmers-next/rabbitmq-server
     num_units: 1
+    options:
+      source: cloud:eoan-train/proposed
   keystone:
     expose: True
     charm: cs:~openstack-charmers-next/keystone
     num_units: 1
+    options:
+      openstack-origin: cloud:eoan-train/proposed
   nova-compute:
     charm: cs:~openstack-charmers-next/nova-compute
     num_units: 1
+    options:
+      openstack-origin: cloud:eoan-train/proposed
   glance:
     expose: True
     charm: cs:~openstack-charmers-next/glance
     num_units: 1
+    options:
+      openstack-origin: cloud:eoan-train/proposed
   cinder:
     expose: True
     charm: cs:~openstack-charmers-next/cinder
@@ -44,12 +56,20 @@ applications:
     options:
       block-device: 'None'
       glance-api-version: '2'
+      openstack-origin: cloud:eoan-train/proposed
   cinder-ceph:
     charm: cs:~openstack-charmers-next/cinder-ceph
   nova-cloud-controller:
     expose: True
     charm: cs:~openstack-charmers-next/nova-cloud-controller
     num_units: 1
+    options:
+      openstack-origin: cloud:eoan-train/proposed
+  placement:
+    charm: cs:~openstack-charmers-next/placement
+    num_units: 1
+    options:
+      openstack-origin: cloud:eoan-train
 relations:
 - - ceph-mon:mds
   - ceph-fs:ceph-mds
@@ -93,3 +113,9 @@ relations:
   - nova-compute:cloud-compute
 - - nova-cloud-controller:image-service
   - glance:image-service
+- - placement
+  - percona-cluster
+- - placement
+  - keystone
+- - placement
+  - nova-cloud-controller

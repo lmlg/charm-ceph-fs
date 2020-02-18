@@ -11,8 +11,7 @@ gate_bundles:
 smoke_bundles:
   - bionic-stein
 dev_bundles:
-  - cosmic-rocky
-  - disco-stein
+  - eoan-train
 configure:
   - zaza.openstack.charm_tests.glance.setup.add_lts_image
 tests:
