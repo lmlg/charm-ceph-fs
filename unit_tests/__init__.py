@@ -13,7 +13,7 @@
 # limitations under the License.
 
 import sys
-import mock
+from unitest import mock
 
 sys.path.append('src')
 
