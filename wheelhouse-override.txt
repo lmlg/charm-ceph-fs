@@ -1,0 +1,1 @@
+git+https://opendev.org/openstack/charms.openstack.git@refs/changes/11/734611/1#egg=charms.openstack
