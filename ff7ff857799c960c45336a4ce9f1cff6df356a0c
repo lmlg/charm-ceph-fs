@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bf51134e_2f448146",
+        "filename": "src/lib/charm/openstack/ceph_fs.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 172,
+      "author": {
+        "id": 20870
+      },
+      "writtenOn": "2020-06-26T12:49:11Z",
+      "side": 1,
+      "message": "Is this class needed?  It looks identical to the Mitaka version?",
+      "range": {
+        "startLine": 170,
+        "startChar": 0,
+        "endLine": 172,
+        "endChar": 70
+      },
+      "revId": "ff7ff857799c960c45336a4ce9f1cff6df356a0c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
