@@ -22,6 +22,30 @@
       "revId": "ff7ff857799c960c45336a4ce9f1cff6df356a0c",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bf51134e_75d7664c",
+        "filename": "src/lib/charm/openstack/ceph_fs.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 172,
+      "author": {
+        "id": 20634
+      },
+      "writtenOn": "2020-06-26T14:38:24Z",
+      "side": 1,
+      "message": "btrfs-tools vs btrfs-progs :)",
+      "parentUuid": "bf51134e_2f448146",
+      "range": {
+        "startLine": 170,
+        "startChar": 0,
+        "endLine": 172,
+        "endChar": 70
+      },
+      "revId": "ff7ff857799c960c45336a4ce9f1cff6df356a0c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
