@@ -46,6 +46,30 @@
       "revId": "ff7ff857799c960c45336a4ce9f1cff6df356a0c",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bf51134e_9bd15233",
+        "filename": "src/lib/charm/openstack/ceph_fs.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 172,
+      "author": {
+        "id": 20870
+      },
+      "writtenOn": "2020-07-01T15:17:32Z",
+      "side": 1,
+      "message": "Right, that makes sense.",
+      "parentUuid": "bf51134e_75d7664c",
+      "range": {
+        "startLine": 170,
+        "startChar": 0,
+        "endLine": 172,
+        "endChar": 70
+      },
+      "revId": "ff7ff857799c960c45336a4ce9f1cff6df356a0c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
