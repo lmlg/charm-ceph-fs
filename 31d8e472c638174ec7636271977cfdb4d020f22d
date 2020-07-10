@@ -1,0 +1,9 @@
+Verified+1: Canonical CI <uosci-testing-bot@ubuntu.com>
+Code-Review+2: Alex Kavanagh (tinwood) <alex.kavanagh@canonical.com>
+Workflow+1: Alex Kavanagh (tinwood) <alex.kavanagh@canonical.com>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Fri, 10 Jul 2020 12:55:28 +0000
+Reviewed-on: https://review.opendev.org/740305
+Project: openstack/charm-ceph-fs
+Branch: refs/heads/master
