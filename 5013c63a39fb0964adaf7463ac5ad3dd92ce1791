@@ -1,0 +1,8 @@
+Code-Review+2: Liam Young <liam.young@canonical.com>
+Workflow+1: Liam Young <liam.young@canonical.com>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Thu, 13 Aug 2020 13:41:47 +0000
+Reviewed-on: https://review.opendev.org/746052
+Project: openstack/charm-ceph-fs
+Branch: refs/heads/stable/20.08
