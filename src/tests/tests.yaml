@@ -1,6 +1,10 @@
 charm_name: ceph-fs
 gate_bundles:
+<<<<<<< HEAD
   - focal-victoria
+=======
+  - focal-ussuri-ec
+>>>>>>> 3ce6985... Add EC fix and tests
   - focal-ussuri
   - bionic-ussuri
   - bionic-train

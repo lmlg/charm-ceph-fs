@@ -76,6 +76,7 @@ def storage_ceph_connected(ceph):
     metadata_weight = weight * 0.20
     # Resize data pool weight to accomodate metadata weight
     weight = weight - metadata_weight
+    extra_pools = []
 
     if config('pool-type') == 'erasure-coded':
         # General EC plugin config
@@ -111,18 +112,25 @@ def storage_ceph_connected(ceph):
         )
 
         # Create EC data pool
+        ec_pool_name = 'ec_{}'.format(pool_name)
         ceph_mds.create_erasure_pool(
-            name=pool_name,
+            name=ec_pool_name,
             erasure_profile=profile_name,
             weight=weight,
             app_name=ceph_mds.ceph_pool_app_name,
             allow_ec_overwrites=True
         )
         ceph_mds.create_replicated_pool(
+            name=pool_name,
+            weight=metadata_weight,
+            app_name=ceph_mds.ceph_pool_app_name
+        )
+        ceph_mds.create_replicated_pool(
             name=metadata_pool_name,
             weight=metadata_weight,
             app_name=ceph_mds.ceph_pool_app_name
         )
+        extra_pools = [ec_pool_name]
     else:
         ceph_mds.create_replicated_pool(
             name=pool_name,
@@ -134,5 +142,5 @@ def storage_ceph_connected(ceph):
             replicas=replicas,
             weight=metadata_weight,
             app_name=ceph_mds.ceph_pool_app_name)
-    ceph_mds.request_cephfs(service)
+    ceph_mds.request_cephfs(service, extra_pools=extra_pools)
     reactive.set_state('ceph.create_pool.req.sent')
