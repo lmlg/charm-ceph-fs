@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9f560f44_a57937fc",
+        "filename": "src/reactive/ceph_fs.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 935
+      },
+      "writtenOn": "2020-09-21T12:46:56Z",
+      "side": 1,
+      "message": "metadata_weight here does not feel quite right?\n\nthis is actually a data pool - we need to figure out how to size its weight",
+      "revId": "89b9b665d0eb81b97e370e3417292e3f262bb956",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
