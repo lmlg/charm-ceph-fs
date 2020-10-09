@@ -1,0 +1,9 @@
+Verified+1: Canonical CI <uosci-testing-bot@ubuntu.com>
+Code-Review+2: Billy Olsen <billy.olsen@gmail.com>
+Workflow+1: Billy Olsen <billy.olsen@gmail.com>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Fri, 09 Oct 2020 23:41:09 +0000
+Reviewed-on: https://review.opendev.org/755872
+Project: openstack/charm-ceph-fs
+Branch: refs/heads/master
