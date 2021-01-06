@@ -1,0 +1,68 @@
+- job:
+    name: groovy-victoria-bluestore
+    parent: func-target:
+      dependencies: &smoke-jobs
+      - bionic-queens
+      vars:
+        tox_extra_args: bluestore-compression:groovy-victoria
+- job:
+    name: focal-victoria-bluestore
+    parent: func-target:
+      dependencies: *smoke-jobs
+      vars:
+        tox_extra_args: bluestore-compression:focal-victoria
+- job:
+    name: focal-ussuri-bluestore
+    parent: func-target:
+      dependencies: *smoke-jobs
+      vars:
+        tox_extra_args: bluestore-compression:focal-ussuri
+- job:
+    name: bionic-ussuri-bluestore
+    parent: func-target:
+      dependencies: *smoke-jobs
+      vars:
+        tox_extra_args: bluestore-compression:bionic-ussuri
+- job:
+    name: bionic-train-bluestore
+    parent: func-target:
+      dependencies: *smoke-jobs
+      vars:
+        tox_extra_args: bluestore-compression:bionic-train
+- job:
+    name: bionic-stein-bluestore
+    parent: func-target:
+      dependencies: *smoke-jobs
+      vars:
+        tox_extra_args: bluestore-compression:bionic-stein
+- job:
+    name: bionic-rocky-bluestore
+    parent: func-target:
+      dependencies: *smoke-jobs
+      vars:
+        tox_extra_args: bluestore-compression:bionic-rocky
+
+- project:
+    vars:
+      needs_charm_build: true
+      charm_build_name: ceph-fs
+    templates:
+      - charm-unit-jobs
+      # using overridden, shorter functional list because the charm does
+      # already in the tests.yaml
+      # - charm-functional-jobs
+    check:
+      jobs:
+        - groovy-victoria-bluestore
+        - focal-victoria-bluestore
+        - focal-ussuri-bluestore
+        - bionic-ussuri-bluestore
+        - bionic-train-bluestore
+        - bionic-stein-bluestore
+        - bionic-rocky-bluestore
+        - bionic-queens
+        - xenial-queens
+        # Xenial-pike is missing because of
+        # https://bugs.launchpad.net/charm-nova-compute/+bug/1862624
+        - xenial-ocata
+        - xenial-mitaka
