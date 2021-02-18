@@ -1,0 +1,9 @@
+Verified+1: Canonical CI <uosci-testing-bot@ubuntu.com>
+Verified+2: Zuul
+Code-Review+2: Aurelien Lourot <aurelien.lourot@canonical.com>
+Workflow+1: Aurelien Lourot <aurelien.lourot@canonical.com>
+Submitted-by: Zuul
+Submitted-at: Thu, 18 Feb 2021 14:32:15 +0000
+Reviewed-on: https://review.opendev.org/c/openstack/charm-ceph-fs/+/776123
+Project: openstack/charm-ceph-fs
+Branch: refs/heads/master
