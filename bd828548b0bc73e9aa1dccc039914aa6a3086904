@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4a7a5c5c_bf2f6457",
+        "filename": "osci.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 31289
+      },
+      "writtenOn": "2021-04-16T12:54:46Z",
+      "side": 1,
+      "message": "Should now be `*` instead of `\u0026`, since `\u0026` is now on line 13.",
+      "revId": "bd828548b0bc73e9aa1dccc039914aa6a3086904",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": true
+    }
+  ]
+}
