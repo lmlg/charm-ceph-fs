@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5aa87962_aa4e4834",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 31289
+      },
+      "writtenOn": "2021-09-09T12:15:02Z",
+      "side": 1,
+      "message": "Instead of \"Bugfix LP: #1935013\" there is a special syntax:\n\n    Closes-Bug: #1935013\n\nThis will then automatically post a comment about this review on launchpad.\n\nSee https://docs.openstack.org/charm-guide/latest/making-a-change.html\n\nExample: https://review.opendev.org/c/openstack/charm-neutron-api/+/801619\n\nAlso, we need to elaborate more in the commit message: we are removing the ntp installation because we now expect operators to use a subordinate ntp charm instead.",
+      "revId": "5471fdfabd37775a6add6169b4fb82fb982adcf7",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": true
+    }
+  ]
+}
