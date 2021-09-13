@@ -1,0 +1,8 @@
+Code-Review+2: Aurelien Lourot <aurelien.lourot@canonical.com>
+Workflow+1: Aurelien Lourot <aurelien.lourot@canonical.com>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Mon, 13 Sep 2021 08:26:51 +0000
+Reviewed-on: https://review.opendev.org/c/openstack/charm-ceph-fs/+/807668
+Project: openstack/charm-ceph-fs
+Branch: refs/heads/master
