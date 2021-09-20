@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f3616fcf_eae3ead6",
+        "filename": "tox.ini",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 31289
+      },
+      "writtenOn": "2021-09-20T14:34:20Z",
+      "side": 1,
+      "message": "I\u0027d like to see a similar disclaimer in `pip.sh`, thanks!",
+      "revId": "c9310ee280d28a297126b4e0b5c9494ce5698abd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": true
+    }
+  ]
+}
