@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "65376005_49e46b11",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 20870
+      },
+      "writtenOn": "2021-10-18T11:02:50Z",
+      "side": 1,
+      "message": "bionic-bluestore failed for unrelated reason due to nova-client not being able to connect to the service.  No retries were attempted in the code.  Suggestion: MERGE.",
+      "revId": "fdcc302652ceb072d25ee6756b14103cb0238ad6",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
