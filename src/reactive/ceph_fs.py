@@ -41,7 +41,11 @@ charm.use_defaults(
 def config_changed():
     ceph_mds = reactive.endpoint_from_flag('ceph-mds.pools.available')
     with charm.provide_charm_instance() as cephfs_charm:
-        cephfs_charm.configure_ceph_keyring(ceph_mds.mds_key())
+        mds_key = ceph_mds.mds_key()
+        if mds_key is None:
+            ch_core.hookenv.log('No MDS key is available, bailing')
+            return
+        cephfs_charm.configure_ceph_keyring(mds_key)
         cephfs_charm.render_with_interfaces([ceph_mds])
         if reactive.is_flag_set('config.changed.source'):
             # update system source configuration and check for upgrade
