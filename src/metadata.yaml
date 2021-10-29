@@ -16,6 +16,7 @@ series:
 - groovy
 - hirsute
 - impish
+- jammy
 subordinate: false
 requires:
   ceph-mds:
