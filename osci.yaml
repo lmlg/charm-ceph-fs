@@ -8,10 +8,16 @@
       - tox-py37
       - tox-py38
 - job:
-    name: impish-xena-bluestore
+    name: jammy-yoga-bluestore
     parent: func-target
     dependencies: &smoke-jobs
       - bionic-queens_local
+    vars:
+      tox_extra_args: bluestore-compression:jammy-yoga
+- job:
+    name: impish-xena-bluestore
+    parent: func-target
+    dependencies: *smoke-jobs
     vars:
       tox_extra_args: bluestore-compression:impish-xena
 - job:
@@ -21,27 +27,23 @@
     vars:
       tox_extra_args: bluestore-compression:hirsute-wallaby
 - job:
-    name: groovy-victoria-bluestore
+    name: focal-yoga-bluestore
     parent: func-target
     dependencies: *smoke-jobs
     vars:
-      tox_extra_args: bluestore-compression:groovy-victoria
-- job:
-    name: xenial-mitaka_local
-    parent: xenial-mitaka
-    dependencies: *smoke-jobs
-- job:
-    name: focal-wallaby-bluestore
-    parent: func-target
-    dependencies: *smoke-jobs
-    vars:
-      tox_extra_args: bluestore-compression:focal-wallaby
+      tox_extra_args: bluestore-compression:focal-yoga
 - job:
     name: focal-xena-bluestore
     parent: func-target
     dependencies: *smoke-jobs
     vars:
       tox_extra_args: bluestore-compression:focal-xena
+- job:
+    name: focal-wallaby-bluestore
+    parent: func-target
+    dependencies: *smoke-jobs
+    vars:
+      tox_extra_args: bluestore-compression:focal-wallaby
 - job:
     name: focal-victoria-bluestore
     parent: func-target
@@ -72,6 +74,10 @@
     dependencies: *smoke-jobs
     vars:
       tox_extra_args: bluestore-compression:bionic-stein
+- job:
+    name: xenial-mitaka_local
+    parent: xenial-mitaka
+    dependencies: *smoke-jobs
 
 - project:
     templates:
@@ -81,22 +87,24 @@
       # - charm-functional-jobs
     check:
       jobs:
-        - bionic-queens_local
         # Xenial-pike is missing because of
         # https://bugs.launchpad.net/charm-nova-compute/+bug/1862624
         - xenial-mitaka_local
-        - impish-xena-bluestore:
+        - bionic-queens_local
+        - bionic-stein-bluestore
+        - bionic-train-bluestore
+        - bionic-ussuri-bluestore
+        - focal-ussuri-bluestore
+        - focal-victoria-bluestore
+        - focal-wallaby-bluestore
+        - focal-xena-bluestore
+        - focal-yoga-bluestore:
             voting: false
         - hirsute-wallaby-bluestore
-        - groovy-victoria-bluestore
-        - focal-xena-bluestore:
+        - impish-xena-bluestore:
             voting: false
-        - focal-wallaby-bluestore
-        - focal-victoria-bluestore
-        - focal-ussuri-bluestore
-        - bionic-ussuri-bluestore
-        - bionic-train-bluestore
-        - bionic-stein-bluestore
+        - jammy-yoga-bluestore:
+            voting: false
     vars:
       needs_charm_build: true
       charm_build_name: ceph-fs
