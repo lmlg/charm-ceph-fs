@@ -1,22 +1,24 @@
 charm_name: ceph-fs
 gate_bundles:
-  - bluestore-compression: groovy-victoria
-  - bluestore-compression: focal-wallaby
-  - bluestore-compression: focal-victoria
-  - bluestore-compression: focal-ussuri
-  - bluestore-compression: bionic-ussuri
-  - bluestore-compression: bionic-train
-  - bluestore-compression: bionic-stein
-  - bluestore-compression: bionic-rocky
   - bionic-queens
-  - xenial-mitaka
-dev_bundles:
-  - bluestore-compression: impish-xena
+  - bluestore-compression: bionic-stein
+  - bluestore-compression: bionic-ussuri
+  - bluestore-compression: focal-ussuri
+  - bluestore-compression: focal-victoria
+  - bluestore-compression: focal-wallaby
+  - bluestore-compression: focal-xena
   - bluestore-compression: hirsute-wallaby
+  - bluestore-compression: impish-wallaby
+dev_bundles:
+  - xenial-mitaka
   - xenial-ocata
   # Xenial-pike is missing because of
   # https://bugs.launchpad.net/charm-nova-compute/+bug/1862624
   - xenial-queens
+  - bluestore-compression: bionic-rocky
+  - bluestore-compression: bionic-train
+  - bluestore-compression: focal-yoga
+  - bluestore-compression: jammy-yoga
 smoke_bundles:
   - bluestore-compression: focal-ussuri
 configure:
@@ -42,3 +44,4 @@ tests_options:
   force_deploy:
     - hirsute-wallaby
     - impish-xena
+    - jammy-yoga
