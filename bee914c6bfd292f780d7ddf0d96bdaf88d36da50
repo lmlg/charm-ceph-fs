@@ -33,6 +33,23 @@
       "message": "charm-recheck",
       "revId": "bee914c6bfd292f780d7ddf0d96bdaf88d36da50",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0a5e63b9_52e9738c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11805
+      },
+      "writtenOn": "2021-11-03T17:02:30Z",
+      "side": 1,
+      "message": "Landing. Tests will get sorted on the ensuing yoga batch.",
+      "revId": "bee914c6bfd292f780d7ddf0d96bdaf88d36da50",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
