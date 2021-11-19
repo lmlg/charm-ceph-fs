@@ -16,6 +16,23 @@
       "message": "One issue was due to DNS",
       "revId": "b455c46541c30779a7c5971e63d5f956f4f14868",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "579deecc_193465c5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 12
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11805
+      },
+      "writtenOn": "2021-11-19T19:18:00Z",
+      "side": 1,
+      "message": "charm-recheck",
+      "revId": "b455c46541c30779a7c5971e63d5f956f4f14868",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
