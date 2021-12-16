@@ -1,0 +1,9 @@
+Verified-1: Canonical CI <uosci-testing-bot@ubuntu.com>
+Verified+2: Zuul
+Code-Review+2: James Page <james.page@canonical.com>
+Workflow+1: James Page <james.page@canonical.com>
+Submitted-by: Zuul
+Submitted-at: Thu, 16 Dec 2021 10:30:50 +0000
+Reviewed-on: https://review.opendev.org/c/openstack/charm-ceph-fs/+/734235
+Project: openstack/charm-ceph-fs
+Branch: refs/heads/master
