@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a81e1110_e600567d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31289
+      },
+      "writtenOn": "2022-01-28T16:30:15Z",
+      "side": 1,
+      "message": "LGTM, thanks! The CI is green enough for this review",
+      "revId": "69381f0328665d9f6a087b77355659e2fa62db7e",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
