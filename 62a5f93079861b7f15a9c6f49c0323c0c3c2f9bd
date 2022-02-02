@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b7c42626_f7028a03",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31289
+      },
+      "writtenOn": "2022-02-02T13:16:33Z",
+      "side": 1,
+      "message": "LGTM, thanks! Unrelated CI failure (infra issue). The CI is green enough for this kind of review IMHO",
+      "revId": "62a5f93079861b7f15a9c6f49c0323c0c3c2f9bd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
