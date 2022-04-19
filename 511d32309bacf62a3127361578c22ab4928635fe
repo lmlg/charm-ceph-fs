@@ -1,0 +1,9 @@
+Verified+1: Canonical CI <uosci-testing-bot@ubuntu.com>
+Verified+2: Zuul
+Code-Review+2: gnuoy <liam.young@canonical.com>
+Workflow+1: gnuoy <liam.young@canonical.com>
+Submitted-by: Zuul
+Submitted-at: Tue, 19 Apr 2022 08:46:47 +0000
+Reviewed-on: https://review.opendev.org/c/openstack/charm-ceph-fs/+/837961
+Project: openstack/charm-ceph-fs
+Branch: refs/heads/stable/quincy
