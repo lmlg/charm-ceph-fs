@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a5176660_722e4829",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34781
+      },
+      "writtenOn": "2022-05-26T23:33:34Z",
+      "side": 1,
+      "message": "\u003e Patch Set 3: Verified-1\n\u003e \n\u003e Build FAILURE by Canonical OpenStack Charm CI.\n\u003e \n\u003e Re-test comment options:\n\u003e \n\u003e - \u0027recheck\u0027 (run/re-run the default upstream and charm test sets)\n\u003e - \u0027charm-recheck\u0027 (run/re-run the default charm verify test set) with Jenkins and Zuul\n\u003e - \u0027zosci-recheck\u0027 (run/re-run the default charm verify test set) with only Zuul\n\u003e \n\u003e For more info, see http://docs.openstack.org/developer/charm-guide/ and https://wiki.openstack.org/wiki/ThirdPartySystems/Canonical_Charm_CI.\n\u003e \n\u003e \n\u003e - charm-build https://openstack-ci-reports.ubuntu.com/artifacts/541/842555/3/check/charm-build/541958b/ : SUCCESS in 27m 05s\n\u003e - osci-lint https://openstack-ci-reports.ubuntu.com/artifacts/f7b/842555/3/check/osci-lint/f7bb994/ : SUCCESS in 18m 17s\n\u003e - tox-py38 https://openstack-ci-reports.ubuntu.com/artifacts/14a/842555/3/check/tox-py38/14a3bc7/ : SUCCESS in 19m 09s\n\u003e - tox-py39 https://openstack-ci-reports.ubuntu.com/artifacts/150/842555/3/check/tox-py39/150106b/ : SUCCESS in 14m 52s\n\u003e - focal-xena https://openstack-ci-reports.ubuntu.com/artifacts/567/842555/3/check/focal-xena/5676c7e/ : SUCCESS in 1h 32m 48s\n\u003e - jammy-yoga https://openstack-ci-reports.ubuntu.com/artifacts/268/842555/3/check/jammy-yoga/268ebd3/ : TIMED_OUT in 3h 32m 10s (non-voting)\n\u003e - focal-yoga https://openstack-ci-reports.ubuntu.com/artifacts/1c2/842555/3/check/focal-yoga/1c261dd/ : FAILURE in 1h 02m 12s\n\nrecheck",
+      "revId": "8b2ff785e40d41fd3341eec2850bec28a3e83173",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
