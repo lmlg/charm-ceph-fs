@@ -33,6 +33,40 @@
       "message": "recheck",
       "revId": "8b2ff785e40d41fd3341eec2850bec28a3e83173",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c8059a64_d69ba97c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33717
+      },
+      "writtenOn": "2022-05-27T14:30:03Z",
+      "side": 1,
+      "message": "Overall looks good. Just a nitpick regarding configuration units. Also, there\u0027s some extra whitespace on the config.yaml file that needs fixing.",
+      "revId": "8b2ff785e40d41fd3341eec2850bec28a3e83173",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dbbff47d_536af324",
+        "filename": "src/config.yaml",
+        "patchSetId": 3
+      },
+      "lineNbr": 263,
+      "author": {
+        "id": 33717
+      },
+      "writtenOn": "2022-05-27T14:30:03Z",
+      "side": 1,
+      "message": "Let\u0027s use something like megabytes instead, otherwise I think this number can get very unwieldy.",
+      "revId": "8b2ff785e40d41fd3341eec2850bec28a3e83173",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
