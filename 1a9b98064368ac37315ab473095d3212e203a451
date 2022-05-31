@@ -20,6 +20,24 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "0924641a_7d9db89a",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 34781
+      },
+      "writtenOn": "2022-05-31T22:25:20Z",
+      "side": 1,
+      "message": "Changed per our discussion to query Ceph daemon instead.",
+      "parentUuid": "b5bdac0d_f5485551",
+      "revId": "1a9b98064368ac37315ab473095d3212e203a451",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "b4266230_d5b952cc",
         "filename": "/PATCHSET_LEVEL",
         "patchSetId": 4
@@ -103,6 +121,24 @@
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "711efe88_3fb7b21e",
+        "filename": "src/config.yaml",
+        "patchSetId": 4
+      },
+      "lineNbr": 281,
+      "author": {
+        "id": 34781
+      },
+      "writtenOn": "2022-05-31T22:25:20Z",
+      "side": 1,
+      "message": "thanks, fixed",
+      "parentUuid": "b4930f29_3bb28d40",
+      "revId": "1a9b98064368ac37315ab473095d3212e203a451",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "0580c82d_c69b1d97",
@@ -116,6 +152,24 @@
       "writtenOn": "2022-05-31T16:20:21Z",
       "side": 1,
       "message": "Why are you making this a class level variable? Is there any reason to not just write this as:\n\n    return {\n        \u0027mds-cache-memory-limit\u0027: config(\u0027mds-cache-memory-limit\u0027)\n        # etc\n    }\n\n?",
+      "revId": "1a9b98064368ac37315ab473095d3212e203a451",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a60b424b_9640f36c",
+        "filename": "src/lib/charm/openstack/ceph_fs.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 34781
+      },
+      "writtenOn": "2022-05-31T22:25:20Z",
+      "side": 1,
+      "message": "It\u0027s vestigial -- I\u0027ve removed the class var and just returned as suggested.",
+      "parentUuid": "0580c82d_c69b1d97",
       "revId": "1a9b98064368ac37315ab473095d3212e203a451",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
