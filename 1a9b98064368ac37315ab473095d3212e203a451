@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "b5bdac0d_f5485551",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 20634
+      },
+      "writtenOn": "2022-05-31T16:20:21Z",
+      "side": 1,
+      "message": "This test is basically the same verification as is done in https://review.opendev.org/c/openstack/charm-ceph-fs/+/842555/4/unit_tests/test_lib_charm_openstack_ceph_fs.py",
+      "revId": "1a9b98064368ac37315ab473095d3212e203a451",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "b4266230_d5b952cc",
@@ -65,6 +82,40 @@
       "writtenOn": "2022-05-31T14:22:50Z",
       "side": 1,
       "message": "LGTM now that the tests are passing.",
+      "revId": "1a9b98064368ac37315ab473095d3212e203a451",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b4930f29_3bb28d40",
+        "filename": "src/config.yaml",
+        "patchSetId": 4
+      },
+      "lineNbr": 281,
+      "author": {
+        "id": 20634
+      },
+      "writtenOn": "2022-05-31T16:20:21Z",
+      "side": 1,
+      "message": "There should be a newline at the end of this file.",
+      "revId": "1a9b98064368ac37315ab473095d3212e203a451",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0580c82d_c69b1d97",
+        "filename": "src/lib/charm/openstack/ceph_fs.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 20634
+      },
+      "writtenOn": "2022-05-31T16:20:21Z",
+      "side": 1,
+      "message": "Why are you making this a class level variable? Is there any reason to not just write this as:\n\n    return {\n        \u0027mds-cache-memory-limit\u0027: config(\u0027mds-cache-memory-limit\u0027)\n        # etc\n    }\n\n?",
       "revId": "1a9b98064368ac37315ab473095d3212e203a451",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
