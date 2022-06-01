@@ -67,6 +67,23 @@
       "message": "\u003e Patch Set 5:\n\u003e \n\u003e Build FAILURE by Canonical OpenStack Charm CI.\n\u003e \n\u003e Re-test comment options:\n\u003e \n\u003e - \u0027recheck\u0027 (run/re-run the default upstream and charm test sets)\n\u003e - \u0027charm-recheck\u0027 (run/re-run the default charm verify test set) with Jenkins and Zuul\n\u003e - \u0027zosci-recheck\u0027 (run/re-run the default charm verify test set) with only Zuul\n\u003e \n\u003e For more info, see http://docs.openstack.org/developer/charm-guide/ and https://wiki.openstack.org/wiki/ThirdPartySystems/Canonical_Charm_CI.\n\u003e \n\u003e \n\u003e - charm-build https://openstack-ci-reports.ubuntu.com/artifacts/2f7/842555/5/check/charm-build/2f7c4c5/ : SUCCESS in 17m 46s\n\u003e - osci-lint https://openstack-ci-reports.ubuntu.com/artifacts/a44/842555/5/check/osci-lint/a445d74/ : RETRY_LIMIT in 4m 00s\n\u003e - tox-py38 https://openstack-ci-reports.ubuntu.com/artifacts/75b/842555/5/check/tox-py38/75bdd2d/ : SUCCESS in 11m 04s\n\u003e - tox-py39 https://openstack-ci-reports.ubuntu.com/artifacts/9e9/842555/5/check/tox-py39/9e99689/ : SUCCESS in 9m 37s\n\u003e - focal-xena focal-xena : SKIPPED\n\u003e - jammy-yoga jammy-yoga : SKIPPED (non-voting)\n\u003e - focal-yoga focal-yoga : SKIPPED\n\ncharm-recheck",
       "revId": "b4ededc75c2ab61d05955f59f0f8b5d419862d8c",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1b9d7f74_0fd44448",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34781
+      },
+      "writtenOn": "2022-06-01T17:02:30Z",
+      "side": 1,
+      "message": "charm-recheck",
+      "revId": "b4ededc75c2ab61d05955f59f0f8b5d419862d8c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
