@@ -16,6 +16,23 @@
       "message": "\u003e Patch Set 6: Verified-1\n\u003e \n\u003e Build FAILURE by Canonical OpenStack Charm CI.\n\u003e \n\u003e Re-test comment options:\n\u003e \n\u003e - \u0027recheck\u0027 (run/re-run the default upstream and charm test sets)\n\u003e - \u0027charm-recheck\u0027 (run/re-run the default charm verify test set) with Jenkins and Zuul\n\u003e - \u0027zosci-recheck\u0027 (run/re-run the default charm verify test set) with only Zuul\n\u003e \n\u003e For more info, see http://docs.openstack.org/developer/charm-guide/ and https://wiki.openstack.org/wiki/ThirdPartySystems/Canonical_Charm_CI.\n\u003e \n\u003e \n\u003e - charm-build https://openstack-ci-reports.ubuntu.com/artifacts/0d6/842555/6/check/charm-build/0d66daa/ : SUCCESS in 18m 10s\n\u003e - osci-lint https://openstack-ci-reports.ubuntu.com/artifacts/fcb/842555/6/check/osci-lint/fcbcf45/ : SUCCESS in 8m 15s\n\u003e - tox-py38 https://openstack-ci-reports.ubuntu.com/artifacts/f8c/842555/6/check/tox-py38/f8c4c09/ : SUCCESS in 7m 48s\n\u003e - tox-py39 https://openstack-ci-reports.ubuntu.com/artifacts/416/842555/6/check/tox-py39/416bfaf/ : SUCCESS in 10m 54s\n\u003e - focal-xena https://openstack-ci-reports.ubuntu.com/artifacts/d33/842555/6/check/focal-xena/d3300c2/ : FAILURE in 45m 57s\n\u003e - jammy-yoga https://openstack-ci-reports.ubuntu.com/artifacts/a16/842555/6/check/jammy-yoga/a1624d3/ : FAILURE in 45m 26s (non-voting)\n\u003e - focal-yoga https://openstack-ci-reports.ubuntu.com/artifacts/8c4/842555/6/check/focal-yoga/8c42d00/ : SUCCESS in 1h 31m 57s\n\ncharm-recheck",
       "revId": "8f31a33a0fd032b079f76abb20f68c4e71e3f50c",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b2907979_7fae6b4a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34781
+      },
+      "writtenOn": "2022-06-02T16:24:29Z",
+      "side": 1,
+      "message": "charm-recheck",
+      "revId": "8f31a33a0fd032b079f76abb20f68c4e71e3f50c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
