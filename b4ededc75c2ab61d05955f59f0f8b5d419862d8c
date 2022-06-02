@@ -101,6 +101,29 @@
       "message": "charm-recheck",
       "revId": "b4ededc75c2ab61d05955f59f0f8b5d419862d8c",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6eee26cc_6f47aedc",
+        "filename": "src/config.yaml",
+        "patchSetId": 5
+      },
+      "lineNbr": 282,
+      "author": {
+        "id": 20634
+      },
+      "writtenOn": "2022-06-02T13:06:45Z",
+      "side": 1,
+      "message": "There\u0027s whitespace on this empty line :-(",
+      "range": {
+        "startLine": 282,
+        "startChar": 0,
+        "endLine": 282,
+        "endChar": 6
+      },
+      "revId": "b4ededc75c2ab61d05955f59f0f8b5d419862d8c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
