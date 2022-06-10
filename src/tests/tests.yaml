@@ -1,11 +1,13 @@
 charm_name: ceph-fs
 gate_bundles:
-  - focal-xena
+  - focal-yoga
 dev_bundles:
   - focal-yoga
+  - jammy-zed
   - jammy-yoga
+  - kinetic-zed
 smoke_bundles:
-  - focal-xena
+  - focal-yoga
 configure:
   - zaza.openstack.charm_tests.glance.setup.add_lts_image
   - zaza.openstack.charm_tests.neutron.setup.basic_overcloud_network
@@ -18,4 +20,4 @@ tests:
   - zaza.openstack.charm_tests.ceph.tests.BlueStoreCompressionCharmOperation
 tests_options:
   force_deploy:
-    - jammy-yoga
+    - kinetic-zed
