@@ -9,9 +9,6 @@ tags:
 - storage
 - file-servers
 - misc
-series:
-- focal
-- jammy
 subordinate: false
 requires:
   ceph-mds:
