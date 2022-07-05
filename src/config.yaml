@@ -5,8 +5,8 @@ options:
     description: Mon and OSD debug level. Max is 20.
   source:
     type: string
-    default: distro
-    description: |
+    default: 
+    description: cloud:bionic-ussuri
       Optional configuration to support use of additional sources such as:
       .
         - ppa:myteam/ppa
