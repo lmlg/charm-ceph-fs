@@ -1,0 +1,10 @@
+Verified-1: Canonical CI <uosci-testing-bot@ubuntu.com>
+Verified+2: Zuul
+Code-Review+2: Billy Olsen <billy.olsen@canonical.com>
+Code-Review+2: Chris MacNaughton <chris.macnaughton@canonical.com>
+Workflow+1: Chris MacNaughton <chris.macnaughton@canonical.com>
+Submitted-by: Zuul
+Submitted-at: Tue, 12 Jul 2022 13:57:40 +0000
+Reviewed-on: https://review.opendev.org/c/openstack/charm-ceph-fs/+/838373
+Project: openstack/charm-ceph-fs
+Branch: refs/heads/master
