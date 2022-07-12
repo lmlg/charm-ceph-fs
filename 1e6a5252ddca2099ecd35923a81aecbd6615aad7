@@ -50,6 +50,23 @@
       "message": "charm-recheck",
       "revId": "1e6a5252ddca2099ecd35923a81aecbd6615aad7",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "27fba25e_92e76e0c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 20634
+      },
+      "writtenOn": "2022-07-12T13:39:25Z",
+      "side": 1,
+      "message": "Given that this change isn\u0027t a functional change, but rather a repository tidiness change, I\u0027ll approve it with another reviewer",
+      "revId": "1e6a5252ddca2099ecd35923a81aecbd6615aad7",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
