@@ -73,6 +73,30 @@
       },
       "revId": "ef8cdae58aa61c7e50ac73bab3965941c98038e8",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "799af803_2cc514ff",
+        "filename": "rename.sh",
+        "patchSetId": 9
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 33717
+      },
+      "writtenOn": "2022-08-03T19:30:11Z",
+      "side": 1,
+      "message": "Maybe, but the logic wouldn\u0027t be simple, as this needs to run on CI as well, where there would be no prompt. So we would need to check for an input tty, which I don\u0027t know if it makes sense, considering no other script does something like that (to my knowledge).",
+      "parentUuid": "c91e1182_3786038d",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 43
+      },
+      "revId": "ef8cdae58aa61c7e50ac73bab3965941c98038e8",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
