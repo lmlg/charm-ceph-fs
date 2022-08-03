@@ -35,6 +35,23 @@
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "517dc09f_4b11329d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34952
+      },
+      "writtenOn": "2022-08-03T08:23:08Z",
+      "side": 1,
+      "message": "Can we use \u0027charmhub-migration\u0027 topic for easy filtering of migration PRs ?",
+      "revId": "ef8cdae58aa61c7e50ac73bab3965941c98038e8",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c91e1182_3786038d",
