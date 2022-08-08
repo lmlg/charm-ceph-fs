@@ -97,6 +97,30 @@
       },
       "revId": "ef8cdae58aa61c7e50ac73bab3965941c98038e8",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "45814579_dbef2e55",
+        "filename": "rename.sh",
+        "patchSetId": 9
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 34952
+      },
+      "writtenOn": "2022-08-08T14:11:16Z",
+      "side": 1,
+      "message": "Understandable.",
+      "parentUuid": "799af803_2cc514ff",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 43
+      },
+      "revId": "ef8cdae58aa61c7e50ac73bab3965941c98038e8",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
