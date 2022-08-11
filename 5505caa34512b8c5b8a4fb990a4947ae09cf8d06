@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "623989ae_bb6f5007",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 20634
+      },
+      "writtenOn": "2022-08-11T19:12:09Z",
+      "side": 1,
+      "message": "charm-recheck\n\nAll of the libjuju bits are now correctly pinned",
+      "revId": "5505caa34512b8c5b8a4fb990a4947ae09cf8d06",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
