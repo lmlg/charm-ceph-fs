@@ -50,6 +50,23 @@
       "message": "charm-recheck\n\nundercloud",
       "revId": "5505caa34512b8c5b8a4fb990a4947ae09cf8d06",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1512a989_124c74fd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 20634
+      },
+      "writtenOn": "2022-08-29T13:18:06Z",
+      "side": 1,
+      "message": "charm-recheck\n\nundercloud",
+      "revId": "5505caa34512b8c5b8a4fb990a4947ae09cf8d06",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
