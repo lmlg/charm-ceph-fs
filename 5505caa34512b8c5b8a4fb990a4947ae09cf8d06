@@ -101,6 +101,23 @@
       "message": "charm-recheck\n\nundercloud",
       "revId": "5505caa34512b8c5b8a4fb990a4947ae09cf8d06",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e2027b30_b1ae5468",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 8992
+      },
+      "writtenOn": "2022-08-30T22:47:32Z",
+      "side": 1,
+      "message": "lgtm",
+      "revId": "5505caa34512b8c5b8a4fb990a4947ae09cf8d06",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
