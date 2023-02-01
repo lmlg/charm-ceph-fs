@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4f00634d_8213d384",
+        "filename": "osci.yaml",
+        "patchSetId": 9
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 20870
+      },
+      "writtenOn": "2023-02-01T15:49:14Z",
+      "side": 1,
+      "message": "Is this also being changed in release-tools (charmed-openstack-info) and on LP?  If not, then the charm won\u0027t build in LP due to the recipe being wrong.",
+      "range": {
+        "startLine": 11,
+        "startChar": 6,
+        "endLine": 11,
+        "endChar": 36
+      },
+      "revId": "131812dbcf027915b3e524f2006ebc0316a52e15",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
