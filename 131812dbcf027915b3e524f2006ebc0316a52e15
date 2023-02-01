@@ -22,6 +22,30 @@
       },
       "revId": "131812dbcf027915b3e524f2006ebc0316a52e15",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "26e740f6_d22f66dc",
+        "filename": "osci.yaml",
+        "patchSetId": 9
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 11805
+      },
+      "writtenOn": "2023-02-01T15:55:31Z",
+      "side": 1,
+      "message": "It\u0027s not updated in release-tools. My thinking here is that we would do what we did for stable/zed openstack branches, which I believe we decided to override those to 2.1/stable.",
+      "parentUuid": "4f00634d_8213d384",
+      "range": {
+        "startLine": 11,
+        "startChar": 6,
+        "endLine": 11,
+        "endChar": 36
+      },
+      "revId": "131812dbcf027915b3e524f2006ebc0316a52e15",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
