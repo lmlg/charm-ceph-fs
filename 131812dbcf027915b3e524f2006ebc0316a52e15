@@ -46,6 +46,30 @@
       },
       "revId": "131812dbcf027915b3e524f2006ebc0316a52e15",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7f32c5cc_d90ce463",
+        "filename": "osci.yaml",
+        "patchSetId": 9
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 11805
+      },
+      "writtenOn": "2023-02-02T18:16:10Z",
+      "side": 1,
+      "message": "It looks like release-tools uses 2.0/stable so I\u0027ll try switching to that. Thanks for catching this.",
+      "parentUuid": "26e740f6_d22f66dc",
+      "range": {
+        "startLine": 11,
+        "startChar": 6,
+        "endLine": 11,
+        "endChar": 36
+      },
+      "revId": "131812dbcf027915b3e524f2006ebc0316a52e15",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
