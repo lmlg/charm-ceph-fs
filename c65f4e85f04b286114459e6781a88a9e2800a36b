@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9f3e2251_c72c53d9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 20634
+      },
+      "writtenOn": "2023-02-03T14:50:53Z",
+      "side": 1,
+      "message": "Just one question",
+      "revId": "c65f4e85f04b286114459e6781a88a9e2800a36b",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bab07be9_e35feeb3",
+        "filename": "charmcraft.yaml",
+        "patchSetId": 10
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 20634
+      },
+      "writtenOn": "2023-02-03T14:50:53Z",
+      "side": 1,
+      "message": "looks like this isn\u0027t necessary for this charm?",
+      "revId": "c65f4e85f04b286114459e6781a88a9e2800a36b",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
