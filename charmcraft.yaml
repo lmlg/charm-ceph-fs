@@ -30,4 +30,14 @@ bases:
         architectures: [amd64, s390x, ppc64el, arm64]
       - name: ubuntu
         channel: "22.04"
+<<<<<<< HEAD   (0e36e8 Remove small OpenStack deployment from functional tests)
         architectures: [amd64, s390x, ppc64el, arm64]
+=======
+        architectures: [amd64, s390x, ppc64el, arm64]
+      - name: ubuntu
+        channel: "22.10"
+        architectures: [amd64, s390x, ppc64el, arm64]
+      - name: ubuntu
+        channel: "23.04"
+        architectures: [amd64, s390x, ppc64el, arm64]
+>>>>>>> CHANGE (f77644 Add support for interim Ubuntu releases)

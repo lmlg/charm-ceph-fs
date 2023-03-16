@@ -12,6 +12,11 @@ tags:
 series:
 - focal
 - jammy
+<<<<<<< HEAD   (0e36e8 Remove small OpenStack deployment from functional tests)
+=======
+- kinetic
+- lunar
+>>>>>>> CHANGE (f77644 Add support for interim Ubuntu releases)
 subordinate: false
 requires:
   ceph-mds:
