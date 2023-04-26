@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "786856ca_eb51e404",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33717
+      },
+      "writtenOn": "2023-04-26T19:31:50Z",
+      "side": 1,
+      "message": "charm-recheck\n(unrelated ceph-fs error)",
+      "revId": "269fa742b2b6ba4ea2d9ac7d2445c4bbee58c394",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
