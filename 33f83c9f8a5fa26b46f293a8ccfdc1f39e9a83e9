@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6d05d7d3_9c0cd601",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33717
+      },
+      "writtenOn": "2023-04-26T14:04:33Z",
+      "side": 1,
+      "message": "charm-recheck\n(apt issue)",
+      "revId": "33f83c9f8a5fa26b46f293a8ccfdc1f39e9a83e9",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
