@@ -33,6 +33,40 @@
       "message": "LGTM; just need another reviewer to land on stable.",
       "revId": "269fa742b2b6ba4ea2d9ac7d2445c4bbee58c394",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6b637e49_5bdfda12",
+        "filename": "src/tests/bundles/jammy-zed.yaml",
+        "patchSetId": 7
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 20634
+      },
+      "writtenOn": "2023-05-02T14:54:48Z",
+      "side": 1,
+      "message": "should these be latest/edge or quincy/edge?",
+      "revId": "269fa742b2b6ba4ea2d9ac7d2445c4bbee58c394",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4883cf11_82eba08d",
+        "filename": "src/tests/bundles/kinetic-zed.yaml",
+        "patchSetId": 7
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 20634
+      },
+      "writtenOn": "2023-05-02T14:54:48Z",
+      "side": 1,
+      "message": "should these be latest/edge or quincy/edge?",
+      "revId": "269fa742b2b6ba4ea2d9ac7d2445c4bbee58c394",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
