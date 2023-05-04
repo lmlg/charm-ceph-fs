@@ -1,0 +1,10 @@
+Workflow+1: Felipe Reyes <felipe.reyes@canonical.com>
+Code-Review+2: Chris MacNaughton <chris.macnaughton@canonical.com>
+Verified+1: Canonical CI <uosci-testing-bot@ubuntu.com>
+Code-Review+2: Felipe Reyes <felipe.reyes@canonical.com>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Thu, 04 May 2023 09:05:27 +0000
+Reviewed-on: https://review.opendev.org/c/openstack/charm-ceph-fs/+/881526
+Project: openstack/charm-ceph-fs
+Branch: refs/heads/stable/quincy.2
