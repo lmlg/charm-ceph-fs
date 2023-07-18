@@ -1,9 +1,9 @@
 variables:
-  openstack-origin: &openstack-origin distro
+  openstack-origin: &openstack-origin cloud:jammy-bobcat
 
 local_overlay_enabled: False
 
-series: &series kinetic
+series: &series jammy
 
 applications:
   ubuntu: # used to test mounts
