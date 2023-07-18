@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ddfc8f31_c2610838",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11805
+      },
+      "writtenOn": "2023-07-18T21:05:04Z",
+      "side": 1,
+      "message": "Not a candidate for \"Bobcat\" support",
+      "revId": "f06cf9cac70515b5a2c1b0da11bd7ea986ac5ade",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
