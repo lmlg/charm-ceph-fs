@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7ef054bf_f5450225",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 20870
+      },
+      "writtenOn": "2023-07-28T15:40:23Z",
+      "side": 1,
+      "message": "pep8 et al, failing on\n\n    File \"/tmp/pip-build-env-f9ola6_b/overlay/lib/python3.10/site-packages/setuptools/_distutils/cmd.py\", line 107, in __getattr__\n      raise AttributeError(attr)\n  AttributeError: cython_sources\n  \nMost likely PyYaml in either requirements.txt or test-requirements.txt needs a bump or cython needs pinning \u003c 3.0.0 (although, as this is the master branch it would be handy to get it working with PyYaml \u003e\u003d 6.0.1)",
+      "revId": "33dc491596b25b8559ae068271022b5106756281",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
