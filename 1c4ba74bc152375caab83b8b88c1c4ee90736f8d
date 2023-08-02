@@ -16,6 +16,23 @@
       "message": "cython issue pep8",
       "revId": "1c4ba74bc152375caab83b8b88c1c4ee90736f8d",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8f0e4de9_2cf30b99",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11805
+      },
+      "writtenOn": "2023-08-02T15:35:58Z",
+      "side": 1,
+      "message": "charm-recheck\n\nThe zuul failures should be fixed by a new commit that was just merged into charm-tools.",
+      "revId": "1c4ba74bc152375caab83b8b88c1c4ee90736f8d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
