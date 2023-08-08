@@ -1,0 +1,9 @@
+Verified+2: Zuul
+Code-Review+2: Luciano Lo Giudice <luciano.logiudice@canonical.com>
+Workflow+1: Luciano Lo Giudice <luciano.logiudice@canonical.com>
+Verified+1: Canonical CI <uosci-testing-bot@ubuntu.com>
+Submitted-by: Zuul
+Submitted-at: Tue, 08 Aug 2023 18:32:50 +0000
+Reviewed-on: https://review.opendev.org/c/openstack/charm-ceph-fs/+/888823
+Project: openstack/charm-ceph-fs
+Branch: refs/heads/master
