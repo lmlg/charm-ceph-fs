@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "db14d83c_06943401",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 15382
+      },
+      "writtenOn": "2023-10-02T18:06:24Z",
+      "side": 1,
+      "message": "charm-recheck # couldn\u0027t repro locally, try again",
+      "revId": "0182a2fe9724a6da2b96d8e45d8115c8c89a2e97",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
