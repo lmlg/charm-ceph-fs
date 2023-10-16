@@ -16,6 +16,23 @@
       "message": "charm-recheck # couldn\u0027t repro locally, try again",
       "revId": "0182a2fe9724a6da2b96d8e45d8115c8c89a2e97",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cbba0d96_706be3b4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33717
+      },
+      "writtenOn": "2023-10-16T20:57:03Z",
+      "side": 1,
+      "message": "charm-recheck",
+      "revId": "0182a2fe9724a6da2b96d8e45d8115c8c89a2e97",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
