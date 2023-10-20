@@ -50,6 +50,23 @@
       "message": "charm-recheck\nosd timeout in focal-yoga",
       "revId": "0182a2fe9724a6da2b96d8e45d8115c8c89a2e97",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "03c2dacf_1fb09832",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 15382
+      },
+      "writtenOn": "2023-10-20T15:15:44Z",
+      "side": 1,
+      "message": "charm-recheck # node failure",
+      "revId": "0182a2fe9724a6da2b96d8e45d8115c8c89a2e97",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
