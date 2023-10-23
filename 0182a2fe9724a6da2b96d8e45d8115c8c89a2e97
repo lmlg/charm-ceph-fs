@@ -67,6 +67,23 @@
       "message": "charm-recheck # node failure",
       "revId": "0182a2fe9724a6da2b96d8e45d8115c8c89a2e97",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9267f423_ae24b621",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33717
+      },
+      "writtenOn": "2023-10-23T14:21:13Z",
+      "side": 1,
+      "message": "charm-recheck\n(ceph-mon issues)",
+      "revId": "0182a2fe9724a6da2b96d8e45d8115c8c89a2e97",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
