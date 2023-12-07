@@ -1,0 +1,11 @@
+Code-Review+2: Peter Sabaini <peter.sabaini@canonical.com>
+Verified+2: Zuul
+Backport-Candidate+1: Peter Sabaini <peter.sabaini@canonical.com>
+Verified-1: Canonical CI <uosci-testing-bot@ubuntu.com>
+Workflow+1: Peter Sabaini <peter.sabaini@canonical.com>
+Submitted-by: Zuul
+Submitted-at: Thu, 07 Dec 2023 14:32:57 +0000
+Reviewed-on: https://review.opendev.org/c/openstack/charm-ceph-fs/+/898503
+Comments-Total: 2
+Project: openstack/charm-ceph-fs
+Branch: refs/heads/master
