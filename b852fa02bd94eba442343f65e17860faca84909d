@@ -16,6 +16,23 @@
       "message": "charm-recheck",
       "revId": "b852fa02bd94eba442343f65e17860faca84909d",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "db603576_1d9f3fab",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 15382
+      },
+      "writtenOn": "2023-12-07T14:27:32Z",
+      "side": 1,
+      "message": "Merging doc-only patch",
+      "revId": "b852fa02bd94eba442343f65e17860faca84909d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
