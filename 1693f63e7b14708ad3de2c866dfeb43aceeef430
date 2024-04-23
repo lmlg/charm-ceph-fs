@@ -16,6 +16,23 @@
       "message": "charm-recheck\n(timeout in tests)",
       "revId": "1693f63e7b14708ad3de2c866dfeb43aceeef430",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9c266bb8_57dc7903",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33717
+      },
+      "writtenOn": "2024-04-23T21:44:00Z",
+      "side": 1,
+      "message": "charm-recheck\n(transient issue)",
+      "revId": "1693f63e7b14708ad3de2c866dfeb43aceeef430",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
