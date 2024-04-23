@@ -1,4 +1,4 @@
-# Copyright 2016 Canonical Ltd
+# Copyright 2024 Canonical Ltd
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,6 +23,11 @@ from charmhelpers.core.hookenv import (
 import charms_openstack.bus
 import charms_openstack.charm as charm
 
+import json
+import os
+import socket
+import subprocess
+
 
 charms_openstack.bus.discover()
 
@@ -34,6 +39,25 @@ charm.use_defaults(
     'upgrade-charm',
     'update-status',
 )
+
+
+@reactive.when('ceph-mds-relation-changed')
+def mds_relation_changed():
+    ceph_mds = reactive.endpoint_from_flag('ceph-mds-relation-changed')
+    pending_key = ceph_mds.all_joined_units.received.get('pending_key')
+    if not pending_key:
+        return
+
+    host = socket.gethostname()
+    keyring_path = '/var/lib/ceph/mds/ceph-%s/keyring' % host
+
+    new_key = json.loads(pending_key).get(host)
+    if new_key is not None and os.path.exists(keyring_path):
+        subprocess.check_call(['sudo', '-u', 'ceph', 'ceph-authtool',
+                               keyring_path, '--name=mds.%s' % host,
+                               '--add-key=%s' % new_key])
+        subprocess.check_call(['sudo', 'systemctl', 'restart',
+                               'ceph-mds@%s.service' % host])
 
 
 @reactive.when_none('charm.paused', 'run-default-update-status')

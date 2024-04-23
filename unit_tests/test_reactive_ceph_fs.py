@@ -34,6 +34,7 @@ class TestRegisteredHooks(test_utils.TestRegisteredHooks):
             'when': {
                 'config_changed': ('ceph-mds.pools.available',),
                 'storage_ceph_connected': ('ceph-mds.connected',),
+                'mds_relation_changed': ('ceph-mds-relation-changed',),
             },
             'when_none': {
                 'config_changed': ('charm.paused',
