@@ -87,6 +87,24 @@
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2e00396d_44bcd3a9",
+        "filename": "src/reactive/ceph_fs.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 15382
+      },
+      "writtenOn": "2024-04-24T14:30:01Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "1d33090c_3a1e23be",
+      "revId": "1693f63e7b14708ad3de2c866dfeb43aceeef430",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9d4a3875_0d4bc7d0",
@@ -118,6 +136,24 @@
       "side": 1,
       "message": "It checks if the keyring file existed before this call. If it did, this was a key rotation, otherwise it\u0027s the basic key setup.",
       "parentUuid": "9d4a3875_0d4bc7d0",
+      "revId": "1693f63e7b14708ad3de2c866dfeb43aceeef430",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e4cf8d40_6674d9f0",
+        "filename": "src/reactive/ceph_fs.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 15382
+      },
+      "writtenOn": "2024-04-24T14:30:01Z",
+      "side": 1,
+      "message": "\u003e It checks if the keyring file existed before this call. If it did, this was a key rotation, otherwise it\u0027s the basic key setup.\n\nOk, so this means there\u0027s no other cases where the relation would change is that correct?",
+      "parentUuid": "251d1a26_f33c9627",
       "revId": "1693f63e7b14708ad3de2c866dfeb43aceeef430",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     },
