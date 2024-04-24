@@ -71,6 +71,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "1d33090c_3a1e23be",
+        "filename": "src/reactive/ceph_fs.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 33717
+      },
+      "writtenOn": "2024-04-24T14:18:06Z",
+      "side": 1,
+      "message": "The naming is indeed unfortunate. I can change it to something like `relation_changed` or the like, but the flags in the decorators cannot, since they are hardcoded very deep into the interface libraries. See: https://opendev.org/openstack/charm-interface-ceph-client/src/branch/master/src/lib/base_requires.py#L59",
+      "parentUuid": "de9b21e1_53ec105f",
+      "revId": "1693f63e7b14708ad3de2c866dfeb43aceeef430",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "9d4a3875_0d4bc7d0",
         "filename": "src/reactive/ceph_fs.py",
         "patchSetId": 3
@@ -88,6 +106,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "251d1a26_f33c9627",
+        "filename": "src/reactive/ceph_fs.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 33717
+      },
+      "writtenOn": "2024-04-24T14:18:06Z",
+      "side": 1,
+      "message": "It checks if the keyring file existed before this call. If it did, this was a key rotation, otherwise it\u0027s the basic key setup.",
+      "parentUuid": "9d4a3875_0d4bc7d0",
+      "revId": "1693f63e7b14708ad3de2c866dfeb43aceeef430",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "a4f94edd_5d3dfe15",
         "filename": "src/reactive/ceph_fs.py",
         "patchSetId": 3
@@ -99,6 +135,24 @@
       "writtenOn": "2024-04-24T09:47:56Z",
       "side": 1,
       "message": "Please add some logging of the fault in case there are real errors we don\u0027t want to hide them",
+      "revId": "1693f63e7b14708ad3de2c866dfeb43aceeef430",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cf383102_d92367f5",
+        "filename": "src/reactive/ceph_fs.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 33717
+      },
+      "writtenOn": "2024-04-24T14:18:06Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "a4f94edd_5d3dfe15",
       "revId": "1693f63e7b14708ad3de2c866dfeb43aceeef430",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
