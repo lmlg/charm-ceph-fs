@@ -33,6 +33,74 @@
       "message": "charm-recheck\n(transient issue)",
       "revId": "1693f63e7b14708ad3de2c866dfeb43aceeef430",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9dbd6d82_30f3322f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 15382
+      },
+      "writtenOn": "2024-04-24T09:47:56Z",
+      "side": 1,
+      "message": "Hey, minor nits inline",
+      "revId": "1693f63e7b14708ad3de2c866dfeb43aceeef430",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "de9b21e1_53ec105f",
+        "filename": "src/reactive/ceph_fs.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 15382
+      },
+      "writtenOn": "2024-04-24T09:47:56Z",
+      "side": 1,
+      "message": "Not part of this change, but I\u0027m not a fan how this func is called config_changed but actually is wired up to the ceph-mds rel",
+      "revId": "1693f63e7b14708ad3de2c866dfeb43aceeef430",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9d4a3875_0d4bc7d0",
+        "filename": "src/reactive/ceph_fs.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 15382
+      },
+      "writtenOn": "2024-04-24T09:47:56Z",
+      "side": 1,
+      "message": "Just for my understanding, this does not check if the key is actually new though, right? Might need some clarification in the comment",
+      "revId": "1693f63e7b14708ad3de2c866dfeb43aceeef430",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a4f94edd_5d3dfe15",
+        "filename": "src/reactive/ceph_fs.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 15382
+      },
+      "writtenOn": "2024-04-24T09:47:56Z",
+      "side": 1,
+      "message": "Please add some logging of the fault in case there are real errors we don\u0027t want to hide them",
+      "revId": "1693f63e7b14708ad3de2c866dfeb43aceeef430",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
