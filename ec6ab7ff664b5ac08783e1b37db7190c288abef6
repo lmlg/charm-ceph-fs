@@ -33,6 +33,23 @@
       "message": "charm-recheck\n(retry with test-PR fix)",
       "revId": "ec6ab7ff664b5ac08783e1b37db7190c288abef6",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ac84ec3f_83c2413d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33717
+      },
+      "writtenOn": "2024-04-24T20:54:42Z",
+      "side": 1,
+      "message": "charm-recheck\n(seems like test-PR change wasn\u0027t there)",
+      "revId": "ec6ab7ff664b5ac08783e1b37db7190c288abef6",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
