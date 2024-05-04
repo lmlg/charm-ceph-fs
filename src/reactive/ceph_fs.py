@@ -13,18 +13,23 @@
 # limitations under the License.
 
 from charms import reactive
+from charms.reactive import scopes, when
 
 import charmhelpers.core as ch_core
 
 from charmhelpers.core.hookenv import (
-    service_name,
+    service_name, application_name,
+    is_leader,
     config)
+from charmhelpers.contrib.storage.linux import ceph
 
 import charms_openstack.bus
 import charms_openstack.charm as charm
 
 import os
 import subprocess
+from typing import Iterable, Dict, Set
+import json
 
 
 charms_openstack.bus.discover()
@@ -205,3 +210,35 @@ def storage_ceph_connected(ceph):
             weight=metadata_weight,
             app_name=ceph_mds.ceph_pool_app_name)
     ceph_mds.request_cephfs(service, extra_pools=extra_pools)
+    # Must have a current request thanks to the call above
+    rq = ceph_mds.get_current_request()
+    rq.add_op({
+        'op': 'create-cephfs-client',
+        'fs_name': service,
+        'client_id': '{}-client'.format(service),
+        'path': "/",
+        'perms': 'rw',
+    })
+    ceph_mds.send_request_if_needed(rq)
+
+@reactive.when_none('charm.paused', 'run-default-update-status')
+@reactive.when('cephfs.configured', 'ceph-mds.pools.available', 'cephfs-share.available')
+def cephfs_share_available():
+    cephfs_share = reactive.endpoint_from_flag('cephfs-share.available')
+    ceph_mds = reactive.endpoint_from_flag('ceph-mds.pools.available')
+    service = application_name()
+    if is_leader():
+        response_key = ceph.get_broker_rsp_key()
+        # After the `create-cephfs-client` request completes, the
+        # databag must contain the generated key for that user.
+        key = ceph_mds.all_joined_units.received[response_key]["key"]
+
+        cephfs_share.set_share(share_info={
+                "fsid": ceph_mds.fsid,
+                "name": service,
+                "path": "/",
+                "monitor_hosts": ceph_mds.mon_hosts(),
+            }, auth_info={
+                "username": '{}-client'.format(service),
+                "key": key
+            })
