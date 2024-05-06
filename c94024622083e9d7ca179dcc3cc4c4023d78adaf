@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "146c870b_b4215347",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 15382
+      },
+      "writtenOn": "2024-05-06T09:13:29Z",
+      "side": 1,
+      "message": "issue with the workload status of the ubuntu charm\nTimed out waiting for \u0027ubuntu/1\u0027",
+      "revId": "c94024622083e9d7ca179dcc3cc4c4023d78adaf",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
