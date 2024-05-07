@@ -50,6 +50,23 @@
       "message": "charm-recheck\n(transient issue)",
       "revId": "c94024622083e9d7ca179dcc3cc4c4023d78adaf",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a39bbb6b_1e7c457b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33717
+      },
+      "writtenOn": "2024-05-07T17:01:29Z",
+      "side": 1,
+      "message": "charm-recheck\n(retry after z-o-t merge)",
+      "revId": "c94024622083e9d7ca179dcc3cc4c4023d78adaf",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
