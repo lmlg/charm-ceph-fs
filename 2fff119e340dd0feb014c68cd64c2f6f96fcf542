@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0d545520_81800210",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 15382
+      },
+      "writtenOn": "2024-05-15T15:57:27Z",
+      "side": 1,
+      "message": "charm-recheck # retry to pick up ceph-osd squid fixes",
+      "revId": "2fff119e340dd0feb014c68cd64c2f6f96fcf542",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
