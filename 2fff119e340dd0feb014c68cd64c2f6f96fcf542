@@ -33,6 +33,23 @@
       "message": "charm-recheck\n(retry with z-o-t fix)",
       "revId": "2fff119e340dd0feb014c68cd64c2f6f96fcf542",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1a331236_6661e2fe",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33717
+      },
+      "writtenOn": "2024-05-16T11:43:22Z",
+      "side": 1,
+      "message": "charm-recheck\n(unrelated error)",
+      "revId": "2fff119e340dd0feb014c68cd64c2f6f96fcf542",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
