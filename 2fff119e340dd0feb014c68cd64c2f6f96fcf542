@@ -16,6 +16,23 @@
       "message": "charm-recheck # retry to pick up ceph-osd squid fixes",
       "revId": "2fff119e340dd0feb014c68cd64c2f6f96fcf542",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "706c9860_d561c3d0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33717
+      },
+      "writtenOn": "2024-05-16T08:57:23Z",
+      "side": 1,
+      "message": "charm-recheck\n(retry with z-o-t fix)",
+      "revId": "2fff119e340dd0feb014c68cd64c2f6f96fcf542",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
