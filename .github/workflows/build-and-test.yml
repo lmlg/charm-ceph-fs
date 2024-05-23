@@ -27,7 +27,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          sudo apt-get -qq install libxslt-dev libxml2-dev python-lxml
+          sudo apt-get -qq install libxslt-dev libxml2-dev python3-lxml
           python -m pip install tox
 
       - name: Run tests
