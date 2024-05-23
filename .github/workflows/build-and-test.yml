@@ -67,8 +67,8 @@ jobs:
       - lint
       - unit-test
       - build
-    name: Juju cluster test
-    runs-on: [self-hosted, xlarge]
+    name: Functional tests
+    runs-on: [self-hosted, ubuntu-latest]
     steps:
 
       - name: Download charm
