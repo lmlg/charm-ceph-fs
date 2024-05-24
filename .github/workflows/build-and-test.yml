@@ -68,7 +68,7 @@ jobs:
       - unit-test
       - build
     name: Functional tests
-    runs-on: [ubuntu-latest, xlarge]
+    runs-on: ubuntu-latest
     steps:
 
       - name: Download charm
