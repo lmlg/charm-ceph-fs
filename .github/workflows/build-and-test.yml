@@ -99,4 +99,4 @@ jobs:
         run: |
           date
           mv ~/artifacts/ceph-fs.charm ./
-          tox -c src func-target -- jammy-antelope
+          tox -c src -e func-target -- jammy-antelope
