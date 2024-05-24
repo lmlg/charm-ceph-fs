@@ -91,10 +91,10 @@ jobs:
       - name: Install dependencies
         run: |
           python3 -m pip install tox
-          if [ ! -d "~/.local/share/juju" ]; then
+          if [ ! -d "$HOME/.local/share/juju" ]; then
             sudo snap install juju
             mkdir -p ~/.local/share/juju
-            juju bootstrap localhost
+            juju bootstrap localhost localhost
           fi
 
       - name: Run jammy-antelope tests
