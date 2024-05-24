@@ -28,7 +28,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get -qq install libxslt-dev libxml2-dev python3-lxml
-          python -m pip install tox
+          python3 -m pip install tox
 
       - name: Run tests
         run: tox -e py3
@@ -48,7 +48,7 @@ jobs:
           channel: 5.20/stable
 
       - name: Install dependencies
-        run: python -m pip install tox
+        run: python3 -m pip install tox
 
       - name: Build charm(s)
         id: builder
@@ -68,7 +68,7 @@ jobs:
       - unit-test
       - build
     name: Functional tests
-    runs-on: [self-hosted, lepaute]
+    runs-on: self-hosted
     steps:
 
       - name: Download charm
@@ -90,10 +90,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python -m pip install tox
-          sudo snap install juju
-          mkdir -p ~/.local/share/juju
-          juju bootstrap localhost
+          python3 -m pip install tox
+          if [ ! -d "~/.local/share/juju" ]; then
+            sudo snap install juju
+            mkdir -p ~/.local/share/juju
+            juju bootstrap localhost
+          fi
 
       - name: Run jammy-antelope tests
         run: |
