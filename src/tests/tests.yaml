@@ -1,6 +1,6 @@
 charm_name: ceph-fs
 configure:
-  - zaza.openstack.charm_tests.ceph.osd.tests.setup_osd_standalone
+  - tests.configure.setup_osd_standalone
 tests:
   - zaza.openstack.charm_tests.ceph.fs.tests.CephFSTests
   - zaza.openstack.charm_tests.ceph.fs.tests.CharmOperationTest
