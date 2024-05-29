@@ -1,10 +1,10 @@
 charm_name: ceph-fs
 configure:
-  - zaza.openstack.charm_tests.ceph.osd.tests.setup_osd_standalone
+  - tests.target.setup_osd_standalone
 tests:
-  - zaza.openstack.charm_tests.ceph.fs.tests.CephFSTests
-  - zaza.openstack.charm_tests.ceph.fs.tests.CharmOperationTest
-  - zaza.openstack.charm_tests.ceph.tests.BlueStoreCompressionCharmOperation
+  - tests.target.CephFSTests
+  - tests.target.CharmOperationTest
+  - tests.target.BlueStoreCompressionCharmOperation
 
 target_deploy_status:
   ubuntu:
