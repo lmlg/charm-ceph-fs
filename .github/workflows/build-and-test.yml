@@ -28,7 +28,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get -qq install libxslt-dev libxml2-dev python3-lxml
-          python -m pip install tox
+          python3 -m pip install tox
 
       - name: Run tests
         run: tox -e py3
@@ -48,7 +48,7 @@ jobs:
           channel: 5.20/stable
 
       - name: Install dependencies
-        run: python -m pip install tox
+        run: python3 -m pip install tox
 
       - name: Build charm(s)
         id: builder
@@ -90,13 +90,28 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python -m pip install tox
-          sudo snap install juju
-          mkdir -p ~/.local/share/juju
-          juju bootstrap localhost
+          python3 -m pip install tox
+          if [ ! -d "$HOME/.local/share/juju" ]; then
+            sudo snap install juju
+            mkdir -p ~/.local/share/juju
+            juju bootstrap localhost localhost
+          fi
 
       - name: Run jammy-antelope tests
         run: |
           date
           mv ~/artifacts/ceph-fs.charm ./
           tox -c src -e func-target -- jammy-antelope
+
+      - name: Upload artifacts on failure
+        if: failure()
+        run: |
+          echo "upload juju crash dumps and logs here"
+
+      - name: Tear down models
+        if: always()
+        run: |
+          models=$(juju models | grep zaza | awk '{print $1}')
+          for model in $models; do
+            juju destroy-model --no-prompt --force --destroy-storage $model
+          done
