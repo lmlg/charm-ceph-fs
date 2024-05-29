@@ -14,6 +14,7 @@
 
 """Encapsulate CephFS testing."""
 
+import json
 import logging
 import subprocess
 import tenacity
@@ -126,6 +127,57 @@ class CephFSTests(unittest.TestCase):
 
         self._write_testing_file_on_instance('ubuntu/0')
         self._verify_testing_file_on_instance('ubuntu/1')
+
+    def test_conf(self):
+        """Test ceph to ensure juju config options are properly set."""
+        self.TESTED_UNIT = 'ceph-fs/0'
+
+        def _get_conf():
+            """get/parse ceph daemon response into dict.
+
+            :returns dict: Current configuration of the Ceph MDS daemon
+            :rtype: dict
+            """
+            cmd = "sudo ceph daemon mds.$HOSTNAME config show"
+            conf = model.run_on_unit(self.TESTED_UNIT, cmd)
+            return json.loads(conf['Stdout'])
+
+        @retry(wait=wait_exponential(multiplier=1, min=4, max=10),
+               stop=stop_after_attempt(10))
+        def _change_conf_check(mds_config):
+            """Change configs, then assert to ensure config was set.
+
+            Doesn't return a value.
+            """
+            model.set_application_config('ceph-fs', mds_config)
+            results = _get_conf()
+            self.assertEqual(
+                results['mds_cache_memory_limit'],
+                mds_config['mds-cache-memory-limit'])
+            self.assertAlmostEqual(
+                float(results['mds_cache_reservation']),
+                float(mds_config['mds-cache-reservation']))
+            self.assertAlmostEqual(
+                float(results['mds_health_cache_threshold']),
+                float(mds_config['mds-health-cache-threshold']))
+
+        # ensure defaults are set
+        mds_config = {'mds-cache-memory-limit': '4294967296',
+                      'mds-cache-reservation': '0.05',
+                      'mds-health-cache-threshold': '1.5'}
+        _change_conf_check(mds_config)
+
+        # change defaults
+        mds_config = {'mds-cache-memory-limit': '8589934592',
+                      'mds-cache-reservation': '0.10',
+                      'mds-health-cache-threshold': '2'}
+        _change_conf_check(mds_config)
+
+        # Restore config to keep tests idempotent
+        mds_config = {'mds-cache-memory-limit': '4294967296',
+                      'mds-cache-reservation': '0.05',
+                      'mds-health-cache-threshold': '1.5'}
+        _change_conf_check(mds_config)
 
 
 class CharmOperationTest(test_utils.BaseCharmTest):
