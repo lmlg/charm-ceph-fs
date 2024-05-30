@@ -111,7 +111,7 @@ jobs:
       - name: Tear down models
         if: always()
         run: |
-          models=$(juju models | grep zaza | awk '{print $1}')
+          models=$(juju models | grep zaza | awk '{print $1}' | tr -d '*')
           for model in $models; do
             juju destroy-model --no-prompt --force --destroy-storage $model
           done
